@@ -1,0 +1,95 @@
+.Chat {
+    flex: .75;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ChatHeader{
+    display:flex;
+    background-color: #36393f;
+    border-bottom: 1px #666666;
+    border-bottom-style: solid;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: lightgray;
+    height:50px;
+}
+
+.ChatHeaderInfo{
+    flex:1;
+    padding-left: 5%;
+}
+.ChatHeaderInfo > h3{
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+
+.ChatHeaderInfo > p{
+    margin-bottom: 3px;
+    color: lightgray;
+}
+
+.ChatHeaderInfoRight{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 10vw;
+}
+.ChatBody{
+    background-color: #36393f;  
+    flex:1;
+    padding: 30px;
+    overflow: scroll;
+    overflow:hidden;
+    border:none;
+    border-style:none;
+    white-space: preline;
+}
+.ChatMessage{
+    display:flex;
+    color:#FFFFF3;
+    padding: 1%;
+    align-items:center;
+    position: relative;
+}
+.ChatMessageInfo{
+    margin-left: 20px;
+    align-items: center;
+}
+.ChatMessageInfo > h3 {
+    font-size: larger;
+    font-weight: 700;
+}
+.ChatTimestamp{
+    position:absolute;
+    top: 7px;
+    right:0;
+}
+.ChatFooter{
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    flex-direction: row;
+    height: 35px;
+}
+.ChatFooter > form {
+    flex: 1;
+    display:flex;
+    align-items: center;
+    border-style:none;
+    border-radius:10px;
+}
+.ChatFooter > form > input {
+    flex:1;
+    margin-left: 10px;
+    border-radius: 30px;
+    border-style:none;
+    padding:10px;
+    color: #FFFFF3;
+    background-color: #202225;
+}
+.ChatFooter> form >button{
+    display:none;
+}
