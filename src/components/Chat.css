@@ -41,11 +41,17 @@
     background-color: #36393f;  
     flex:1;
     padding: 30px;
-    overflow: scroll;
-    overflow:hidden;
+    overflow-y: scroll;
+    /* overflow:hidden; */
+    scrollbar-width: none;
     border:none;
     border-style:none;
     white-space: preline;
+}
+
+::-webkit-scrollbar{
+    width:0px;
+    background:transparent;
 }
 .ChatMessage{
     display:flex;
